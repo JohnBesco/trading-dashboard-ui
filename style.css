@@ -257,6 +257,7 @@ a {
   display: grid;
   grid-template-columns: auto 2fr auto;
   grid-auto-flow: column;
+  padding: 1em 1em 1em 0;
 }
 
 .greeting-container {
