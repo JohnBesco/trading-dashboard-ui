@@ -159,7 +159,6 @@ html {
   backdrop-filter: blur(4.400000095367432px);
   margin: 0 auto;
   gap: 1em;
-  overflow: hidden;
 }
 
 .side-bar {
@@ -533,7 +532,6 @@ button > p {
 .trading-panel-container {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  grid-template-rows: repeat(2, 1fr);
   grid-column: 1 / 2;
   grid-row: 4 / end;
   position: relative;
