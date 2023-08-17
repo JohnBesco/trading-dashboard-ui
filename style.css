@@ -187,7 +187,6 @@ html {
   font-size: 3rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 82.5%; /* 1.85625rem */
   letter-spacing: 0.1rem;
 }
 
@@ -197,7 +196,6 @@ li {
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 0rem; /* 0% */
 }
 
 .side-bar-nav {
@@ -244,7 +242,6 @@ li {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 0rem; /* 0% */
 }
 
 a {
@@ -274,4 +271,28 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+.search-bar {
+  width: 18.75rem;
+  height: 3.125rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: #121415;
+}
+
+.search-bar > p {
+  color: #a3a3a3;
+  font-family: Archivo;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.header > .icon-container {
+  width: 3.125rem;
+  height: 3.125rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: #121415;
 }
