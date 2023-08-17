@@ -327,3 +327,48 @@ a {
   justify-content: center;
 }
 
+.main-container {
+  display: grid;
+  grid-template-columns: 2fr auto;
+  border: 1px solid red;
+}
+
+.top-assets-container {
+  display: flex;
+  width: 43.875rem;
+  height: 10rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: #121415;
+  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+  border: 1px solid red;
+}
+
+.asset-container > h2 {
+  color: #fff;
+  font-family: Archivo;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.asset-container:first-child {
+  color: #c13737;
+  font-family: Archivo;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.asset-container:nth-child(2),
+.asset-container:nth-child(3)
+{
+  color: #4ef400;
+  font-family: Archivo;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
