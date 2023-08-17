@@ -172,24 +172,48 @@ html {
 .logo-container {
   display: flex;
   align-items: center;
-  gap: 10px;  
+  gap: 0.81rem;  
 }
 
 h1 {
   color: #e8e8e8;
-  font-family: "Teko" sans-serif;
-  font-size: 2.25rem;
+  font-family: "Teko";
+  font-size: 3rem;
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%; /* 1.85625rem */
-  letter-spacing: 0.045rem;
+  letter-spacing: 0.1rem;
 }
 
 li {
   color: #fff;
-  font-family: Archivo;
+  font-family: 'Archivo';
   font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: 0rem; /* 0% */
 }
+
+.side-bar-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10em ;
+}
+
+.top-nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 3em;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+  flex-grow: 1;
+}
+
