@@ -423,6 +423,9 @@ a {
 }
 
 .chart-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 2fr;
   grid-column: 1 / 2;
   grid-row: 2 / 3 ;
   width: 100%;
@@ -432,6 +435,13 @@ a {
   background: #121415;
   box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
 }
+
+.top-bar-container {
+  display: flex;
+  flex-direction: row;
+}
+
+
 
 button > p {
   font-family: Roboto;
