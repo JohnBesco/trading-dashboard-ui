@@ -335,6 +335,8 @@ a {
 
 .top-assets-container {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 43.875rem;
   height: 10rem;
   flex-shrink: 0;
@@ -342,9 +344,10 @@ a {
   background: #121415;
   box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
   border: 1px solid red;
+  padding: 2em;
 }
 
-.asset-container > h2 {
+.price-container > h2 {
   color: #fff;
   font-family: Archivo;
   font-size: 1rem;
@@ -353,7 +356,23 @@ a {
   line-height: normal;
 }
 
-.asset-container:first-child {
+.asset-title > h1 {
+  color: #fff;
+  font-family: Archivo;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.asset-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.asset-container:first-child > p {
   color: #c13737;
   font-family: Archivo;
   font-size: 0.75rem;
@@ -362,13 +381,43 @@ a {
   line-height: normal;
 }
 
-.asset-container:nth-child(2),
-.asset-container:nth-child(3)
-{
+.asset-container > p {
   color: #4ef400;
   font-family: Archivo;
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+.asset-container p:last-child  {
+  justify-self: flex-end;
+  grid-column: 2/ end;
+}
+
+
+.asset-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr auto auto ;
+  gap: 1em  ;
+}
+
+.price-container {
+  grid-column: 1 / end ;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.asset-container > .asset-title {
+  grid-column: 1 / end;
+}
+
+.asset-container > h2 + img {
+  grid-column: 2 / end;
+}
+
+.asset-container > :nth-child(2) {
+  grid-column: 1 / end;
 }
