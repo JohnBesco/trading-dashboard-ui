@@ -159,6 +159,7 @@ html {
   backdrop-filter: blur(4.400000095367432px);
   margin: 0 auto;
   gap: 1em;
+  overflow: hidden;
 }
 
 .side-bar {
@@ -481,7 +482,15 @@ a {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  gap: 0.5em;
+  gap: 1em;
+}
+
+.selected {
+  border-radius: 0.3125rem;
+  border: 1px solid #6f5a06;
+  padding: 0.19em 0.31em 0.19em 0.31em;
+  color: #fbd643;
+  line-height: normal;
 }
 
 button > p {
