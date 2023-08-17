@@ -465,10 +465,18 @@ button > p {
 }
 
 .trading-btns-container button:nth-child(2) {
-  color: #9BFF6C;
+  color: #9bff6c;
 }
 
 .trading-btns-container button:last-child {
   color: #d24343;
 }
 
+.trade-panel {
+  width: 21.8125rem;
+  height: 12.0625rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: #121415;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
