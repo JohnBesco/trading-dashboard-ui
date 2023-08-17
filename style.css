@@ -167,12 +167,13 @@ html {
   flex-shrink: 0;
   border-radius: 1.25rem 0rem 0rem 1.25rem;
   background: #121415;
+  padding-bottom: 2em;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
-  gap: 0.81rem;  
+  gap: 0.81rem;
 }
 
 h1 {
@@ -187,7 +188,7 @@ h1 {
 
 li {
   color: #fff;
-  font-family: 'Archivo';
+  font-family: "Archivo";
   font-size: 1rem;
   font-style: normal;
   font-weight: 500;
@@ -198,7 +199,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 10em ;
+  gap: 6em;
 }
 
 .top-nav-container {
@@ -209,6 +210,14 @@ li {
   gap: 3em;
 }
 
+.bottom-nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 2em;
+}
+
 li {
   display: flex;
   align-items: center;
@@ -217,3 +226,23 @@ li {
   flex-grow: 1;
 }
 
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.profile-container > p {
+  color: #fff;
+  font-family: Archivo;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0rem; /* 0% */
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
