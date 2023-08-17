@@ -254,7 +254,7 @@ a {
   grid-row: 1/2;
   border: 1px solid red;
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 2fr auto;
   grid-auto-flow: column;
   padding: 2rem;
 }
@@ -303,6 +303,12 @@ a {
   font-weight: 500;
 }
 
+.options-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
 .options-container > .icon-container {
   width: 3.125rem;
   height: 3.125rem;
@@ -315,9 +321,9 @@ a {
   padding: 1em;
 }
 
-.options-container {
+.search-bar-container {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
