@@ -148,7 +148,7 @@ html {
 
 .dashboard-container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: auto 2fr;
   grid-template-rows: 1fr 2fr;
   width: 105rem;
   height: 58rem;
@@ -181,7 +181,7 @@ html {
   gap: 0.81rem;
 }
 
-h1 {
+.logo-container > h1 {
   color: #e8e8e8;
   font-family: "Teko";
   font-size: 3rem;
@@ -194,7 +194,7 @@ h1 {
 li {
   color: #fff;
   font-family: "Archivo";
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
   line-height: 0rem; /* 0% */
@@ -250,4 +250,28 @@ li {
 a {
   text-decoration: none;
   color: #fff;
+}
+
+.header {
+  grid-column: 2 / end;
+  grid-row: 1/2;
+  border: 1px solid red;
+}
+
+.greeting-container > h1 {
+  color: #fff;
+  font-family: Archivo;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.greeting-container > p {
+  color: #a3a3a3;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
