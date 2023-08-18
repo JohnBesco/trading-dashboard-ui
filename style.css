@@ -509,13 +509,16 @@ button > p {
   flex-shrink: 0;
   border-radius: 0.625rem;
   background: #121415;
+  margin-right: 1em;
+}
+
+.trading-btns-container button:first-child:hover {
   box-shadow: 0px 0px 0.17995312809944153px 0px #ffde05,
     0px 0px 0.35990625619888306px 0px #ffde05,
     0px 0px 1.259671926498413px 0px #ffde05,
     0px 0px 2.519343852996826px 0px #ffde05,
     0px 0px 4.318874835968018px 0px #ffde05,
     0px 0px 7.55803108215332px 0px #ffde05;
-  margin-right: 1em;
 }
 
 .trading-btns-container button:nth-last-child(-n + 2) {
@@ -702,7 +705,7 @@ button > p {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 100%;  
+  width: 100%;
   height: 23rem;
   border-radius: 0.625rem;
   background: #121415;
@@ -716,7 +719,7 @@ button > p {
   padding: 1em 2em 1em 2em;
 }
 
-.trending-coins-wrapper p:nth-child(1){
+.trending-coins-wrapper p:nth-child(1) {
   text-align: center;
 }
 
@@ -726,20 +729,6 @@ button > p {
   align-items: center;
   justify-content: center;
   gap: 2em;
-}
-
-.fade-in {
-  opacity: 0;
-  animation: fade-in 1s ease-in-out forwards;
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .slide-in-left {
@@ -770,5 +759,22 @@ button > p {
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+.zoom-in {
+  transform: scale(0);
+  opacity: 0;
+  animation: zoom-in 1s ease-in-out forwards;
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
 }
