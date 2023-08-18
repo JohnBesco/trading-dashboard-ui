@@ -625,3 +625,12 @@ button > p {
   font-weight: 500;
   line-height: normal;
 }
+
+.news-container {
+  width: 15.25rem;
+  height: 23.75rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: #121415;
+  box-shadow: 0px 48px 100px 0px rgba(17, 12, 46, 0.15);
+}
