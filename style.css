@@ -535,8 +535,26 @@ button > p {
   color: #9bff6c;
 }
 
+.trading-btns-container button:nth-child(2):hover {
+  box-shadow: 0px 0px 0.19640624523162842px 0px #9cff6c,
+    0px 0px 0.39281249046325684px 0px #9cff6c,
+    0px 0px 1.374843716621399px 0px #9cff6c,
+    0px 0px 2.749687433242798px 0px #9cff6c,
+    0px 0px 4.713749885559082px 0px #9cff6c,
+    0px 0px 8.249062538146973px 0px #9cff6c;
+}
+
 .trading-btns-container button:last-child {
   color: #d24343;
+}
+
+.trading-btns-container button:last-child:hover {
+  box-shadow: 0px 0px 0.1771875023841858px 0px #d24343,
+    0px 0px 0.3543750047683716px 0px #d24343,
+    0px 0px 1.2403124570846558px 0px #d24343,
+    0px 0px 2.4806249141693115px 0px #d24343,
+    0px 0px 4.252500057220459px 0px #d24343,
+    0px 0px 7.441874980926514px 0px #d24343;
 }
 
 .trading-panel-container {
@@ -577,7 +595,19 @@ button > p {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+  border-radius: 100px;
 }
+
+.swap-btn-container:hover {
+  box-shadow: 0px 0px 0.17995312809944153px 0px #ffde05,
+    0px 0px 0.35990625619888306px 0px #ffde05,
+    0px 0px 1.259671926498413px 0px #ffde05,
+    0px 0px 2.519343852996826px 0px #ffde05,
+    0px 0px 4.318874835968018px 0px #ffde05,
+    0px 0px 7.55803108215332px 0px #ffde05;
+}
+
+
 
 .trade-title-container > h2 {
   color: #fff;
