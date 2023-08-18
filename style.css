@@ -221,6 +221,10 @@ li {
   gap: 2em;
 }
 
+.side-bar-nav a:hover {
+  color: #929292;
+}
+
 .top-nav-container > li,
 .bottom-nav-container > li {
   display: flex;
@@ -658,7 +662,7 @@ button > p {
   grid-row: 1 / span 4;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr 1fr;
+  grid-template-rows: auto 1fr;
 }
 
 .news-container {
@@ -709,7 +713,7 @@ button > p {
   font-style: normal;
   font-weight: 500;
   margin-bottom: 0.25em;
-  line-height: 1.2rem;
+  line-height: 1.3rem;
 }
 
 .news-wrapper > span {
