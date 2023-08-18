@@ -709,6 +709,7 @@ button > p {
   font-style: normal;
   font-weight: 500;
   margin-bottom: 0.25em;
+  line-height: 1.2rem;
 }
 
 .news-wrapper > span {
