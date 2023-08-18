@@ -608,8 +608,6 @@ button > p {
     0px 0px 7.55803108215332px 0px #ffde05;
 }
 
-
-
 .trade-title-container > h2 {
   color: #fff;
   font-family: Archivo;
@@ -807,5 +805,18 @@ button > p {
   to {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+.pulse {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
   }
 }
