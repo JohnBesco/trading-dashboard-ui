@@ -3,11 +3,11 @@ function getGreeting() {
     const hour = now.getHours();
 
     if (hour >= 0 && hour < 12) {
-      return "Good morning";
+      return "Good Morning";
     } else if (hour >= 12 && hour < 18) {
-      return "Good afternoon";
+      return "Good Afternoon";
     } else {
-      return "Good evening";
+      return "Good Evening";
     }
 }
 
@@ -18,8 +18,28 @@ function askForName() {
       const greetingParagraph = document.getElementById("greeting");
       profileParagraph.textContent = userName;
       const greeting = getGreeting();
-      greetingParagraph.textContent = greeting + ", " + userName;
+      greetingParagraph.textContent = greeting + ", " + userName + "!";
     }
 }
 
 window.onload = askForName;
+
+function updateCurrentTime() {
+    const currentTimeElement = document.getElementById("current-time");
+    const now = new Date();
+
+    const options = {
+      hour: "numeric",
+      minute: "numeric",
+      day: "numeric",
+      month: "short",
+      year: "numeric",
+    };
+
+    const formattedTime = now.toLocaleString("en-US", options);
+    currentTimeElement.textContent = formattedTime;
+}
+
+updateCurrentTime();
+
+setInterval(updateCurrentTime, 1000);
